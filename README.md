@@ -1,2 +1,3 @@
 # proyectoAI
-Proyecto de Inteligencia Artificial (Gerald, Miguel y Arturo)
+Proyecto de Inteligencia Artificial
+Algoritmo a*
