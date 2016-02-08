@@ -28,131 +28,143 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numerocollabel = new System.Windows.Forms.Label();
-            this.numerofilcol = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.textpesoc = new System.Windows.Forms.TextBox();
-            this.textpesod = new System.Windows.Forms.TextBox();
-            this.labelcruz = new System.Windows.Forms.Label();
-            this.labeldiagonal = new System.Windows.Forms.Label();
-            this.buttonaceptar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.filas = new System.Windows.Forms.NumericUpDown();
+            this.columnas = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pesocruz = new System.Windows.Forms.TextBox();
+            this.pesodiag = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.aceptar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.filas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnas)).BeginInit();
             this.SuspendLayout();
             // 
-            // numericUpDown1
+            // filas
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(95, 29);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.filas.Location = new System.Drawing.Point(115, 30);
+            this.filas.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.filas.Minimum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(79, 20);
-            this.numericUpDown1.TabIndex = 0;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // numerocollabel
-            // 
-            this.numerocollabel.AutoSize = true;
-            this.numerocollabel.Location = new System.Drawing.Point(13, 29);
-            this.numerocollabel.Name = "numerocollabel";
-            this.numerocollabel.Size = new System.Drawing.Size(56, 13);
-            this.numerocollabel.TabIndex = 1;
-            this.numerocollabel.Text = "Columnas:";
-            // 
-            // numerofilcol
-            // 
-            this.numerofilcol.AutoSize = true;
-            this.numerofilcol.Location = new System.Drawing.Point(13, 69);
-            this.numerofilcol.Name = "numerofilcol";
-            this.numerofilcol.Size = new System.Drawing.Size(31, 13);
-            this.numerofilcol.TabIndex = 2;
-            this.numerofilcol.Text = "Filas:";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(95, 67);
-            this.numericUpDown2.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(79, 20);
-            this.numericUpDown2.TabIndex = 3;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.filas.Name = "filas";
+            this.filas.Size = new System.Drawing.Size(81, 22);
+            this.filas.TabIndex = 0;
+            this.filas.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
             // 
-            // textpesoc
+            // columnas
             // 
-            this.textpesoc.Location = new System.Drawing.Point(95, 113);
-            this.textpesoc.Name = "textpesoc";
-            this.textpesoc.Size = new System.Drawing.Size(79, 20);
-            this.textpesoc.TabIndex = 4;
+            this.columnas.Location = new System.Drawing.Point(115, 72);
+            this.columnas.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.columnas.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.columnas.Name = "columnas";
+            this.columnas.Size = new System.Drawing.Size(81, 22);
+            this.columnas.TabIndex = 1;
+            this.columnas.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             // 
-            // textpesod
+            // label1
             // 
-            this.textpesod.Location = new System.Drawing.Point(95, 152);
-            this.textpesod.Name = "textpesod";
-            this.textpesod.Size = new System.Drawing.Size(79, 20);
-            this.textpesod.TabIndex = 5;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 17);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Filas";
             // 
-            // labelcruz
+            // label2
             // 
-            this.labelcruz.AutoSize = true;
-            this.labelcruz.Location = new System.Drawing.Point(13, 116);
-            this.labelcruz.Name = "labelcruz";
-            this.labelcruz.Size = new System.Drawing.Size(57, 13);
-            this.labelcruz.TabIndex = 6;
-            this.labelcruz.Text = "Peso cruz:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Columnas";
             // 
-            // labeldiagonal
+            // pesocruz
             // 
-            this.labeldiagonal.AutoSize = true;
-            this.labeldiagonal.Location = new System.Drawing.Point(13, 155);
-            this.labeldiagonal.Name = "labeldiagonal";
-            this.labeldiagonal.Size = new System.Drawing.Size(77, 13);
-            this.labeldiagonal.TabIndex = 7;
-            this.labeldiagonal.Text = "Peso diagonal:";
+            this.pesocruz.Location = new System.Drawing.Point(115, 114);
+            this.pesocruz.Name = "pesocruz";
+            this.pesocruz.Size = new System.Drawing.Size(81, 22);
+            this.pesocruz.TabIndex = 4;
+            this.pesocruz.Text = "1";
             // 
-            // buttonaceptar
+            // pesodiag
             // 
-            this.buttonaceptar.Location = new System.Drawing.Point(55, 201);
-            this.buttonaceptar.Name = "buttonaceptar";
-            this.buttonaceptar.Size = new System.Drawing.Size(75, 23);
-            this.buttonaceptar.TabIndex = 8;
-            this.buttonaceptar.Text = "Aceptar";
-            this.buttonaceptar.UseVisualStyleBackColor = true;
-            this.buttonaceptar.Click += new System.EventHandler(this.buttonaceptar_Click);
+            this.pesodiag.Location = new System.Drawing.Point(115, 159);
+            this.pesodiag.Name = "pesodiag";
+            this.pesodiag.Size = new System.Drawing.Size(81, 22);
+            this.pesodiag.TabIndex = 5;
+            this.pesodiag.Text = "1.4";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Peso cruz";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 159);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 17);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Peso diagonal";
+            // 
+            // aceptar
+            // 
+            this.aceptar.Location = new System.Drawing.Point(115, 198);
+            this.aceptar.Name = "aceptar";
+            this.aceptar.Size = new System.Drawing.Size(75, 23);
+            this.aceptar.TabIndex = 8;
+            this.aceptar.Text = "Aceptar";
+            this.aceptar.UseVisualStyleBackColor = true;
+            this.aceptar.Click += new System.EventHandler(this.aceptar_Click);
             // 
             // menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(194, 261);
-            this.Controls.Add(this.buttonaceptar);
-            this.Controls.Add(this.labeldiagonal);
-            this.Controls.Add(this.labelcruz);
-            this.Controls.Add(this.textpesod);
-            this.Controls.Add(this.textpesoc);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numerofilcol);
-            this.Controls.Add(this.numerocollabel);
-            this.Controls.Add(this.numericUpDown1);
+            this.ClientSize = new System.Drawing.Size(221, 253);
+            this.Controls.Add(this.aceptar);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pesodiag);
+            this.Controls.Add(this.pesocruz);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.columnas);
+            this.Controls.Add(this.filas);
             this.Name = "menu";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.Text = "Menu";
+            ((System.ComponentModel.ISupportInitialize)(this.filas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,15 +172,14 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label numerocollabel;
-        private System.Windows.Forms.Label numerofilcol;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.TextBox textpesoc;
-        private System.Windows.Forms.TextBox textpesod;
-        private System.Windows.Forms.Label labeldiagonal;
-        private System.Windows.Forms.Label labelcruz;
-        private System.Windows.Forms.Button buttonaceptar;
+        private System.Windows.Forms.NumericUpDown filas;
+        private System.Windows.Forms.NumericUpDown columnas;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox pesocruz;
+        private System.Windows.Forms.TextBox pesodiag;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button aceptar;
     }
 }
-
